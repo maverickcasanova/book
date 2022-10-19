@@ -3,7 +3,7 @@ authors = ["Glyn Normington"]
 language = "en"
 multilingual = false
 src = "src"
-title = "The Little Book"
+title = "Little Book"
 
 [output.html]
 curly-quotes = true

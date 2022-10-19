@@ -7,5 +7,5 @@ title = "The Little Book"
 
 [output.html]
 curly-quotes = true
-git-repository-url = "https://github.com/disdi/book"
-site-url = "https://disdi.github.io/book/"
+git-repository-url = "https://github.com/maverickcasanova/book"
+site-url = "https://maverickcasanova.github.io/book/"

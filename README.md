@@ -1,4 +1,4 @@
-# The Little Book of Rust Books
+# The Little Book of Rust Book
 
 A catalogue of Rust mdbooks.
 

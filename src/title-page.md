@@ -1,3 +1,3 @@
-# Learning German
+# Learning the German Language
 
 *by Maverick*

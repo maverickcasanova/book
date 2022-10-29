@@ -3,7 +3,7 @@ authors = ["Glyn Normington"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Little Book"
+title = "German Book"
 
 [output.html]
 curly-quotes = true

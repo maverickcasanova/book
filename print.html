@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Little Book</title>
+        <title>Learning German</title>
         <meta name="robots" content="noindex" />
 
 
@@ -32,16 +32,18 @@
 
         <!-- Custom theme stylesheets -->
 
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
         <!-- Provide site root to javascript -->
-        <script>
+        <script type="text/javascript">
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
+        <script type="text/javascript">
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,7 +59,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
+        <script type="text/javascript">
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -69,7 +71,7 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
+        <script type="text/javascript">
             var html = document.querySelector('html');
             var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
@@ -82,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">Introduction</a></li><li class="chapter-item expanded "><a href="official.html"><strong aria-hidden="true">1.</strong> Official Rust Books</a></li><li class="chapter-item expanded "><a href="unofficial.html"><strong aria-hidden="true">2.</strong> Unofficial Rust Books</a></li><li class="chapter-item expanded "><a href="applications.html"><strong aria-hidden="true">3.</strong> Rust Application Books</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">Learning German</a></li><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter_3.html"><strong aria-hidden="true">3.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">4.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">5.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter_6.html"><strong aria-hidden="true">6.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter_7.html"><strong aria-hidden="true">7.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter_8.html"><strong aria-hidden="true">8.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter_9.html"><strong aria-hidden="true">9.</strong> Chapter 9</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,14 +113,11 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Little Book</h1>
+                    <h1 class="menu-title">Learning German</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://github.com/maverickcasanova/book" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
                     </div>
@@ -136,7 +135,7 @@
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
+                <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -146,200 +145,349 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="the-little-book-of-rust-books"><a class="header" href="#the-little-book-of-rust-books">The Little Book of Rust Books</a></h1>
-<p>This book is a treasure-trove of Rust books:</p>
+                        <h1 id="learning-german"><a class="header" href="#learning-german">Learning German</a></h1>
+<p><em>by Saket Sinha</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="foreword"><a class="header" href="#foreword">Foreword</a></h1>
+<p>It was always so destined, that German will become part of my life. 
+Dedicated to all the foreigners here in Germany, trying to make sense out of this language.</p>
+<p>— Saket Sinha </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+<p>Gender Indentifications by Word Endings .</p>
+<table><thead><tr><th>der</th><th>die</th><th>das</th></tr></thead><tbody>
+<tr><td>-el</td><td>-age</td><td>-tum</td></tr>
+<tr><td>-en</td><td>-e</td><td>-ment</td></tr>
+<tr><td>-er</td><td>-ei</td><td>-ium</td></tr>
+<tr><td>-ig</td><td>-ie</td><td>-um</td></tr>
+<tr><td>-ich</td><td>-heit</td><td>-chen</td></tr>
+<tr><td>-ling</td><td>-keit</td><td>-lein</td></tr>
+<tr><td></td><td>-schaft</td><td></td></tr>
+<tr><td></td><td>-ik</td><td></td></tr>
+<tr><td></td><td>-in</td><td></td></tr>
+<tr><td></td><td>-ion</td><td></td></tr>
+<tr><td></td><td>-tät</td><td></td></tr>
+<tr><td></td><td>-ung</td><td></td></tr>
+<tr><td></td><td>-ur</td><td></td></tr>
+</tbody></table>
+<p>Gender of compound noun always the gender of the last noun.
+<br /> </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-2"><a class="header" href="#chapter-2">Chapter 2</a></h1>
+<p><strong>Declension of &quot;the&quot; Articles</strong> <br /></p>
+<table><thead><tr><th></th><th>masculine</th><th>feminine</th><th>neutral</th><th>plural</th></tr></thead><tbody>
+<tr><td>Nominative</td><td>der</td><td>die</td><td>das</td><td>die</td></tr>
+<tr><td>Accusative</td><td>den</td><td>die</td><td>das</td><td>die</td></tr>
+<tr><td>Dative</td><td>dem</td><td>der</td><td>dem</td><td>den</td></tr>
+<tr><td>Genitive</td><td>des</td><td>der</td><td>des</td><td>der</td></tr>
+</tbody></table>
+<br />
+<p><strong>Declension of &quot;a, an&quot; Articles</strong> <br /></p>
+<table><thead><tr><th></th><th>masculine</th><th>feminine</th><th>neutral</th></tr></thead><tbody>
+<tr><td>Nominative</td><td>ein</td><td>eine</td><td>ein</td></tr>
+<tr><td>Accusative</td><td>einen</td><td>ein</td><td>ein</td></tr>
+<tr><td>Dative</td><td>einem</td><td>einer</td><td>einem</td></tr>
+<tr><td>Genitive</td><td>eines</td><td>einer</td><td>eines</td></tr>
+</tbody></table>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-3"><a class="header" href="#chapter-3">Chapter 3</a></h1>
+<h2 id="nominative-case"><a class="header" href="#nominative-case">Nominative Case</a></h2>
+<h3 id="masculine"><a class="header" href="#masculine">Masculine</a></h3>
 <ul>
-<li><a href="./official.html">Official books</a> maintained at <a href="https://www.rust-lang.org/">rust-lang.org</a></li>
-<li><a href="./unofficial.html">Unofficial books</a> maintained elsewhere</li>
-<li><a href="./applications.html">Application books</a> on specific Rust applications</li>
+<li>der Mann geht.<br /> </li>
+<li>ein Mann geht.<br /> </li>
+<li>kein Mann geht.<br /> </li>
 </ul>
-<p>If you know of others, why not submit a <a href="https://github.com/lborb/book#pull-requests">pull request</a>?</p>
-<p>The titles of books not in
-<a href="https://github.com/rust-lang/mdBook">mdbook</a> format are <em>italicised</em>.
-For more books in other formats, see <a href="https://github.com/sger/RustBooks">Rust Books</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="official-rust-books"><a class="header" href="#official-rust-books">Official Rust Books</a></h1>
-<p>The following books are maintained at <a href="https://www.rust-lang.org/">rust-lang.org</a>.
-Many of them are mentioned in <a href="https://www.rust-lang.org/learn">Learn Rust</a>.</p>
-<p>Introductory:</p>
+<h3 id="feminine"><a class="header" href="#feminine">Feminine</a></h3>
 <ul>
-<li><a href="https://doc.rust-lang.org/stable/rust-by-example/">Rust by Example</a></li>
-<li><a href="https://doc.rust-lang.org/book/">The Rust Programming Language</a> - “the book”</li>
+<li>die Frau kommt.<br /> </li>
+<li>eine Frau kommt.<br /> </li>
+<li>keine Frau kommt.<br /> </li>
 </ul>
-<p>Core:</p>
+<h3 id="neutral"><a class="header" href="#neutral">Neutral</a></h3>
 <ul>
-<li><a href="https://doc.rust-lang.org/cargo/index.html">The Cargo Book</a></li>
-<li><a href="https://doc.rust-lang.org/edition-guide/index.html">The Edition Guide</a></li>
-<li><a href="https://doc.rust-lang.org/rustc/index.html">The rustc Book</a></li>
-<li><a href="https://doc.rust-lang.org/stable/rustdoc/">The rustdoc Book</a></li>
-<li><a href="https://rust-lang.github.io/rustup/index.html">The rustup Book</a></li>
+<li>das Kind spielt.<br /> </li>
+<li>ein Kind spielt.<br /> </li>
+<li>kein Kind spielt.<br /> </li>
 </ul>
-<p>Advanced:</p>
+<h3 id="plural"><a class="header" href="#plural">Plural</a></h3>
 <ul>
-<li><a href="https://rustc-dev-guide.rust-lang.org/">Guide to Rustc Development</a> - compiler internals</li>
-<li><a href="https://forge.rust-lang.org/">Rust Forge</a> - Rust team documentation</li>
-<li><a href="https://doc.rust-lang.org/reference/">The Rust Reference</a></li>
-<li><a href="https://doc.rust-lang.org/unstable-book/">The Rust Unstable Book</a> - nightly-only features</li>
-<li><a href="https://doc.rust-lang.org/nomicon/">The Rustonomicon</a> - the dark arts of unsafe Rust</li>
+<li>die Kind spielt.<br /> </li>
+<li>keine Kind spielt.<br /> </li>
 </ul>
-<p>Working groups:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-4"><a class="header" href="#chapter-4">Chapter 4</a></h1>
+<h2 id="accusative-case---articles"><a class="header" href="#accusative-case---articles">Accusative Case - Articles</a></h2>
+<h3 id="masculine-1"><a class="header" href="#masculine-1">Masculine</a></h3>
 <ul>
-<li><a href="https://rust-lang.github.io/compiler-team/working-groups/"><em>Compiler team working groups</em></a> - a list of working groups</li>
-<li><a href="https://rust-lang.github.io/types-team/">types-team</a> - traits implementation improvements</li>
-<li><a href="https://rust-lang.github.io/wg-async/">wg-async</a> - foundations of async I/O</li>
+<li>Ich fahre den Wagen.<br /></li>
+<li>Ich fahre einen Wagen.<br /></li>
+<li>Ich fahre keinen Wagen.<br /></li>
 </ul>
-<p>Other:</p>
+<h3 id="feminine-1"><a class="header" href="#feminine-1">Feminine</a></h3>
 <ul>
-<li><a href="https://rust-lang.github.io/async-book/">Asynchronous Programming in Rust</a></li>
-<li><a href="https://rust-lang.github.io/mdBook/">mdBook</a></li>
-<li><a href="https://rust-lang.github.io/polonius/">Polonius</a> - experimental borrow checker crate</li>
-<li><a href="https://rust-lang.github.io/api-guidelines/">Rust API Guidelines</a></li>
-<li><a href="https://rust-lang.github.io/rfcs/">Rust RFCs</a></li>
-<li><a href="https://rust-lang.github.io/chalk/book/">The Chalk Book</a> - Rust’s new trait system implementation</li>
-<li><a href="https://rust-lang.github.io/rust-bindgen/">The <code>bindgen</code> User Guide</a></li>
+<li>Ich kaufe die Uhr.<br /></li>
+<li>Ich kaufe ein Uhr.<br /></li>
+<li>Ich kaufe kein Uhr.<br /></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="unofficial-rust-books"><a class="header" href="#unofficial-rust-books">Unofficial Rust Books</a></h1>
-<p>The following books are maintained outside <a href="https://www.rust-lang.org/">rust-lang.org</a>.</p>
-<p>Introductory:</p>
+<h3 id="neutral-1"><a class="header" href="#neutral-1">Neutral</a></h3>
 <ul>
-<li><a href="https://stevedonovan.github.io/rust-gentle-intro/readme.html">A Gentle Introduction To Rust</a></li>
-<li><a href="https://fasterthanli.me/articles/a-half-hour-to-learn-rust"><em>A half-hour to learn Rust</em></a></li>
-<li><a href="https://dyner.netlify.app/"><code>Dyner</code></a> - experimental trait (<em>dyn</em>) objects in Rust</li>
-<li><a href="https://dhghomon.github.io/easy_rust/">Easy Rust</a> - aimed at non-English native speakers</li>
-<li><a href="https://www.lurklurk.org/effective-rust/">Effective Rust</a> - Rust guidelines<sup class="footnote-reference"><a href="#effectiverust">1</a></sup></li>
-<li><a href="http://cliffle.com/p/dangerust/"><em>Learn Rust the Dangerous Way</em></a></li>
-<li><a href="https://rust-unofficial.github.io/too-many-lists/">Learning Rust With Entirely Too Many Linked Lists</a></li>
-<li><a href="https://practice.rs/">Rust By Practice</a> - Practise Rust with challenging examples, exercises and projects</li>
-<li><a href="https://rust-lang-nursery.github.io/rust-cookbook/">Rust Cookbook</a> - a collection of example programs</li>
-<li><a href="https://aminb.gitbooks.io/rust-for-c/content/index.html">Rust for C++ Programmers</a></li>
-<li><a href="https://www.chiark.greenend.org.uk/~ianmdlvl/rust-polyglot/index.html">Rust for the Polyglot Programmer</a></li>
-<li><a href="https://www.rustnote.com/rustnote.html">Rustnote</a></li>
-<li><a href="https://chrismorgan.info/blog/rust-ownership-the-hard-way/"><em>Rust Ownership, the Hard Way</em></a></li>
-<li><a href="https://sn99.github.io/rust-practise-questions/">Rust Practise Questions</a> (sic)</li>
+<li>Ich lese das Buch.<br /></li>
+<li>Ich lese ein Buch.<br /></li>
+<li>Ich lese kein Buch.<br /></li>
 </ul>
-<p>Application domains:</p>
+<h3 id="plural-1"><a class="header" href="#plural-1">Plural</a></h3>
 <ul>
-<li><a href="https://pest.rs/book/">A thoughtful introduction to the pest parser</a></li>
-<li>Async
+<li>Ich lese die Bücher.<br /></li>
+<li>Ich lese keine Bücher.<br /></li>
+</ul>
+<br />
+<h2 id="accusative-case---prepositions"><a class="header" href="#accusative-case---prepositions">Accusative Case - Prepositions<br /></a></h2>
+<h3 id="durch"><a class="header" href="#durch">Durch</a></h3>
 <ul>
-<li><a href="https://book.async.rs/introduction.html">Async programming in Rust with async-std</a></li>
-<li><a href="https://async-raft.github.io/async-raft/">Async Raft</a> - the Raft distributed consensus protocol in async Rust</li>
-<li><a href="https://cfsamson.github.io/book-exploring-async-basics/">The Node Experiment - Exploring Async Basics with Rust</a></li>
-<li><a href="https://tokio.rs/tokio/tutorial"><em>Tokio Tutorial</em></a> - event-driven, non-blocking I/O</li>
+<li>Ich gehe <em>durch den Park</em>.<br /></li>
 </ul>
-</li>
-<li><a href="https://parallel-rust-cpp.github.io/introduction.html">Comparing parallel Rust and C++</a></li>
-<li>Command line
+<h3 id="für"><a class="header" href="#für">Für</a></h3>
 <ul>
-<li><a href="https://rust-cli.github.io/book/index.html">Command Line Applications in Rust</a></li>
-<li><a href="https://picklenerd.github.io/pngme_book/">PNGme: An Intermediate Rust Project</a> - build a command line program to hide secret messages in PNG files</li>
+<li>Ich kaufe essen <em>für meinen Vater</em>.<br /></li>
 </ul>
-</li>
-<li><a href="https://cxx.rs">CXX — Safe Interop Between Rust and C++</a></li>
-<li>Embedded
+<h3 id="ohne"><a class="header" href="#ohne">Ohne</a></h3>
 <ul>
-<li><a href="https://emp.jamesmunns.com/">Embedded: The Missing Parts</a></li>
-<li><a href="https://espressif-trainings.ferrous-systems.com/">Embedded Rust on Espressif</a> - training Material for learning to use Embedded Rust with the Espressif ESP32-C3.</li>
-<li><a href="https://rust-embedded.github.io/book/">The Embedded Rust Book</a></li>
-<li><a href="https://docs.rust-embedded.org/embedonomicon/">The Embedonomicon</a> - build a <code>#![no_std]</code> application from scratch</li>
-<li><a href="https://esp-rs.github.io/book/">The Rust on ESP Book</a> - comprehensive guide on using the Rust programming language with Espressif SoCs and modules.</li>
-<li><a href="https://embedded-trainings.ferrous-systems.com/preparations.html">Workbook for Embedded Workshops</a> - an embedded Rust workshop</li>
+<li>Ich reise <em>ohne meinen Wagen</em>.<br /></li>
 </ul>
-</li>
-<li><a href="https://erwabook.com/">Engineering Rust Web Applications</a></li>
-<li>Foreign Function Interface (FFI)
+<h3 id="gegen"><a class="header" href="#gegen">Gegen</a></h3>
 <ul>
-<li><a href="http://jakegoulding.com/rust-ffi-omnibus/"><em>The Rust FFI Omnibus</em></a></li>
-<li><a href="https://michael-f-bryan.github.io/rust-ffi-guide/">The (unofficial) Rust FFI Guide</a> - FFI in depth</li>
+<li>Der Wagon fährt <em>gegen ein Haus</em>.<br /></li>
 </ul>
-</li>
-<li><a href="https://cfsamson.github.io/books-futures-explained/">Futures Explained in 200 Lines of Rust</a></li>
-<li>GraphQL
+<h3 id="um"><a class="header" href="#um">Um</a></h3>
 <ul>
-<li><a href="https://async-graphql.github.io/async-graphql/en/index.html">Async-graphql Book</a> - GraphQL server-side library</li>
-<li><a href="https://cynic-rs.dev/">Cynic - A GraphQL Client For Rust</a></li>
-<li><a href="https://graphql-rust.github.io/">Juniper - GraphQL Server for Rust</a></li>
+<li>Ich macht nichts <em>um die Umwelt</em>.<br /></li>
 </ul>
-</li>
-<li><a href="https://rtic.rs/">Real-Time Interrupt-driven Concurrency</a></li>
-<li><a href="https://rust-tutorials.github.io/triangle-from-scratch/">Triangle From Scratch</a> - draw a triangle using Win32, but no external crates</li>
-<li>Web assembly
+<h3 id="entlang"><a class="header" href="#entlang">Entlang</a></h3>
 <ul>
-<li><a href="https://rustwasm.github.io/docs/wasm-pack/">Hello wasm-pack!</a> - documentation and tutorials on how to use <code>wasm-pack</code></li>
-<li><a href="https://rustwasm.github.io/docs/book/">Rust and WebAssembly</a></li>
-<li><a href="https://rustwasm.github.io/docs/wasm-bindgen/">The <code>wasm-bindgen</code> Guide</a></li>
-<li><a href="https://rustwasm.github.io/docs/wasm-pack/">The <code>wasm-pack</code> Guide</a></li>
-<li><a href="https://azriel.im/wasm_it/">WASM It</a></li>
+<li>Ich gehe  <em>den Weg entlang</em>.<br /></li>
 </ul>
-</li>
-<li><a href="https://os.phil-opp.com/"><em>Writing an OS in Rust</em></a></li>
-<li><a href="https://rust-hosted-langs.github.io/book/introduction.html">Writing Interpreters in Rust: a Guide</a></li>
-</ul>
-<p>Other:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-5"><a class="header" href="#chapter-5">Chapter 5</a></h1>
+<h2 id="dativ-case---articles"><a class="header" href="#dativ-case---articles">Dativ Case - Articles</a></h2>
+<h3 id="masculine-2"><a class="header" href="#masculine-2">Masculine</a></h3>
 <ul>
-<li><a href="https://www.cs.brandeis.edu/~cs146a/rust/doc-02-21-2015/book/advanced-macros.html">Advanced Macros</a></li>
-<li><a href="https://highassurance.rs/">High Assurance Rust</a> - developing secure and robust software</li>
-<li><a href="https://rust-unofficial.github.io/patterns/">Rust Design Patterns</a></li>
-<li><a href="https://rust-fuzz.github.io/book/">Rust Fuzz Book</a> - fuzz testing</li>
-<li><a href="https://nnethercote.github.io/perf-book/">Rust Performance</a></li>
-<li><a href="https://salsa-rs.github.io/salsa/">Salsa</a> - framework for on-demand, incrementalized computation</li>
-<li><a href="https://anssi-fr.github.io/rust-guide/">Secure Rust Guidelines</a></li>
-<li><a href="https://lborb.github.io/book/">The Little Book of Rust Books</a></li>
-<li><a href="https://veykril.github.io/tlborm/">The Little Book of Rust Macros</a></li>
-<li><a href="https://rust-random.github.io/book/">The Rust Rand Book</a> - Rust’s random number library</li>
-<li><a href="https://zicklag.github.io/rust-tutorials/overview.html">Rust Tutorials</a></li>
+<li>Ich schicke dem Vater nichts.<br /></li>
+<li>Ich schicke einem Vater nichts.<br /></li>
+<li>Ich schicke keinem Vater nichts.<br /></li>
 </ul>
-<div class="footnote-definition" id="effectiverust"><sup class="footnote-definition-label">1</sup>
-<p>Some concepts are incomplete, as of March 2022.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rust-application-books"><a class="header" href="#rust-application-books">Rust Application Books</a></h1>
-<p>Applications of Rust:</p>
+<h3 id="feminine-2"><a class="header" href="#feminine-2">Feminine</a></h3>
 <ul>
-<li><a href="https://github.com/aquova/chip8-book/releases"><em>An Introduction to Chip-8 Emulation using the Rust Programming Language</em></a> - PDF book</li>
-<li><a href="https://google.github.io/crosvm/">Book of crosvm</a> - a hosted (a.k.a. type-2) virtual machine monitor</li>
-<li>Embedded
+<li>Ich schicke der Mutter nichts.<br /></li>
+<li>Ich schicke einer Mutter nichts.<br /></li>
+<li>Ich schicke keiner Mutter nichts.<br /></li>
+</ul>
+<h3 id="neutral-2"><a class="header" href="#neutral-2">Neutral</a></h3>
 <ul>
-<li><a href="https://anachro.computer/">Anachro</a> - a network protocol and a PC architecture for microcontrollers</li>
-<li><a href="https://docs.rust-embedded.org/discovery/">Discovery</a> - use an F3 Discovery circuit board and Rust</li>
-<li><a href="https://esp-rs.github.io/book/">The Rust on ESP Book</a></li>
+<li>Ich schicke dem Kind nichts.<br /></li>
+<li>Ich schicke einem Kind nichts.<br /></li>
+<li>Ich schicke keinem Kind nichts.<br /></li>
 </ul>
-</li>
-<li>Game development
+<h3 id="plural-2"><a class="header" href="#plural-2">Plural</a></h3>
 <ul>
-<li><a href="https://book.amethyst.rs/stable/">Amethyst Game Engine</a></li>
-<li><a href="https://bevyengine.org/learn/book/introduction/"><em>BEVY The Book</em></a> - data-driven game engine</li>
-<li><a href="https://rylev.github.io/DMG-01/public/book/">DMG-01: How to Emulate a Game Boy</a></li>
-<li><a href="https://psichix.github.io/emergent/">Emergent AI</a> - smart agents and events</li>
-<li><a href="https://fyrox-book.github.io/">Fyrox Cheat Book</a> - a general purpose game engine</li>
-<li><a href="https://bfnightly.bracketproductions.com/">Roguelike Tutorial - In Rust</a> - <a href="https://en.wikipedia.org/wiki/Roguelike">Roguelike</a> game development</li>
-<li><a href="https://specs.amethyst.rs/docs/tutorials/">The Specs Book</a> - an introduction to <a href="https://en.wikipedia.org/wiki/Entity_component_system">Entity–component–system (ECS)</a> and the Specs API</li>
-<li><a href="https://bugzmanov.github.io/nes_ebook/index.html">Writing NES Emulator in Rust</a> - NES is the Nintendo Entertainment System gaming platform</li>
+<li>Ich schicke den Kinder nichts.<br /></li>
+<li>Ich schicke keinen Kinder nichts<br /></li>
 </ul>
-</li>
-<li>GPU development
+<br />
+<h2 id="dativ-case---prepositions"><a class="header" href="#dativ-case---prepositions">Dativ Case - Prepositions</a></h2>
+<h3 id="aus"><a class="header" href="#aus">aus</a></h3>
 <ul>
-<li><a href="https://embarkstudios.github.io/rust-gpu/book/">Rust GPU Dev Guide</a></li>
+<li>Ich gehe <em>aus dem Haus</em>.<br /></li>
 </ul>
-</li>
-<li>GUI development
+<h3 id="bei"><a class="header" href="#bei">bei</a></h3>
 <ul>
-<li><a href="https://linebender.org/druid/">Druid</a></li>
-<li><a href="https://aaronerhardt.github.io/relm4-book/book/">GUI development with Relm4</a></li>
-<li><a href="https://gtk-rs.org/gtk4-rs/stable/latest/book/">GUI development with Rust and GTK 4</a></li>
-<li><a href="https://sixtyfps.io/releases/0.1.4/docs/tutorial/rust/">SixtyFPS Memory Game Tutorial (Rust)</a> - tutorial using the SixtyFPS GUI toolkit</li>
+<li>Mein Wagon ist <em>bei meinem Haus</em>.<br /></li>
 </ul>
-</li>
-<li><a href="http://intermezzos.github.io/book/second-edition/">intermezzOS OS</a></li>
-<li><a href="https://nalgebra.org/docs/"><em>nalgebra</em></a> - a linear algebra library</li>
-<li><a href="https://igiagkiozis.github.io/plotly/content/plotly_rs.html">Plotly.rs</a></li>
-<li><a href="https://viperproject.github.io/prusti-dev/user-guide/">Prusti user guide</a> - a Rust verifier</li>
-<li><a href="https://www.sea-ql.org/SeaORM/docs/index"><em>SeaORM</em></a> - an async and dynamic ORM</li>
-<li><a href="https://serde.rs/">Serde</a> - <strong>ser</strong>ialize and <strong>de</strong>serialize Rust data structures</li>
-<li><a href="https://uazu.github.io/stakker/about.html">Stakker actor runtime guide</a> - a low-level single-thread actor runtime for Rust</li>
-<li><a href="https://dbrgn.github.io/tealdeer/">Tealdeer User Manual</a> - implementation of <a href="https://github.com/tldr-pages/tldr">tldr</a> (help like <code>man</code>, but more approachable).</li>
-<li><a href="https://doc.redox-os.org/book/">The Redox Operating System</a></li>
-<li><a href="https://theseus-os.github.io/Theseus/book/index.html">Thesus OS</a></li>
-<li><a href="https://zebra.zfnd.org/">The Zebra Book</a></li>
+<h3 id="mit"><a class="header" href="#mit">mit</a></h3>
+<ul>
+<li>Ich fahre <em>mit dem Auto</em>.<br /></li>
 </ul>
+<h3 id="nach"><a class="header" href="#nach">nach</a></h3>
+<ul>
+<li>Ich schlafe <em>nach der Arbeit</em>.<br /></li>
+</ul>
+<h3 id="seit"><a class="header" href="#seit">seit</a></h3>
+<ul>
+<li>Ich lebe <em>seit</em> drei jahre in <em>deisem Haus</em>.<br /></li>
+</ul>
+<h3 id="von"><a class="header" href="#von">von</a></h3>
+<ul>
+<li>Ich bekomme einen Brief <em>von der Arbeit</em>.<br /></li>
+</ul>
+<h3 id="zu"><a class="header" href="#zu">zu</a></h3>
+<ul>
+<li>Ich werde <em>zu meinem Geburtstag</em> eine Feier machen.<br /></li>
+</ul>
+<h3 id="gegenüber"><a class="header" href="#gegenüber">gegenüber</a></h3>
+<ul>
+<li>ich habe <em>dem Leben gegenüber</em> eine positive Einstellung.<br /></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-6"><a class="header" href="#chapter-6">Chapter 6</a></h1>
+<h2 id="genitiv-case"><a class="header" href="#genitiv-case">Genitiv Case</a></h2>
+<h3 id="masculine-3"><a class="header" href="#masculine-3">Masculine</a></h3>
+<ul>
+<li>Es ist das Auto des Vater.<br /></li>
+</ul>
+<h3 id="feminine-3"><a class="header" href="#feminine-3">Feminine</a></h3>
+<ul>
+<li>Es ist das Auto der Mutter.<br /></li>
+</ul>
+<h3 id="neutral-3"><a class="header" href="#neutral-3">Neutral</a></h3>
+<ul>
+<li>Es ist das Auto des Kind.<br /></li>
+</ul>
+<h3 id="plural-3"><a class="header" href="#plural-3">Plural</a></h3>
+<ul>
+<li>Es ist das Auto der Kinder.<br /></li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2 id="genitiv-case---prepositions"><a class="header" href="#genitiv-case---prepositions">Genitiv Case - Prepositions<br /></a></h2>
+<h3 id="anstatt"><a class="header" href="#anstatt">anstatt</a></h3>
+<ul>
+<li>Anstatt seinem Vater kam seiner Mutter.<br /></li>
+</ul>
+<h3 id="trotz"><a class="header" href="#trotz">trotz</a></h3>
+<ul>
+<li>Trotz des Staus kamen wir rechtzeitig an.<br /></li>
+</ul>
+<h3 id="wahrend"><a class="header" href="#wahrend">wahrend</a></h3>
+<ul>
+<li>Wir sprechen nicht während des Essen.</li>
+</ul>
+<h3 id="wegen"><a class="header" href="#wegen">wegen</a></h3>
+<ul>
+<li>Er arbeitet nicht wegen der Krankheit.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-7"><a class="header" href="#chapter-7">Chapter 7</a></h1>
+<h2 id="pronouns"><a class="header" href="#pronouns">Pronouns <br /></a></h2>
+<table><thead><tr><th>Nominative</th><th>Accusative</th><th>Dative</th><th>Possessive</th></tr></thead><tbody>
+<tr><td>ich</td><td>mich</td><td>mir</td><td>mein</td></tr>
+<tr><td>du</td><td>dich</td><td>dir</td><td>dein</td></tr>
+<tr><td>er</td><td>ihn</td><td>ihm</td><td>sein</td></tr>
+<tr><td>es</td><td>es</td><td>ihm</td><td>sein</td></tr>
+<tr><td>sie</td><td>sie</td><td>ihr</td><td>ihr</td></tr>
+<tr><td>wir</td><td>uns</td><td>uns</td><td>unser</td></tr>
+<tr><td>ihr</td><td>euch</td><td>euch</td><td>euer</td></tr>
+<tr><td>sie</td><td>sie</td><td>ihnen</td><td>ihr</td></tr>
+<tr><td>Sie</td><td>Sie</td><td>Ihnen</td><td>Ihr</td></tr>
+</tbody></table>
+<h3 id="ich"><a class="header" href="#ich">Ich</a></h3>
+<ul>
+<li>Accusative - Du sieht mich.<br /></li>
+<li>Dative - Du gibt es mir.<br /></li>
+<li>Possessive - Es ist mein Haus.<br /></li>
+</ul>
+<h3 id="du"><a class="header" href="#du">Du</a></h3>
+<ul>
+<li>Accusative - Ich sehe dich.<br /></li>
+<li>Dative - Ich gebe es dir.<br /></li>
+<li>Possessive - Es ist dein Haus.<br /></li>
+</ul>
+<br />
+<br />
+<h3 id="er"><a class="header" href="#er">Er</a></h3>
+<ul>
+<li>Accusative - Ich sehe ihn.<br /></li>
+<li>Dative - Ich gebe ihm dies.<br /></li>
+<li>Possessive - Es ist sein Haus.<br /></li>
+</ul>
+<h3 id="es"><a class="header" href="#es">Es</a></h3>
+<ul>
+<li>Accusative - Ich sehe es.<br /></li>
+<li>Dative - Ich gebe ihm dies.<br /></li>
+<li>Possessive - Es ist sein Haus.<br /></li>
+</ul>
+<h3 id="sie"><a class="header" href="#sie">sie</a></h3>
+<ul>
+<li>Accusative - Ich sehe sie.<br /></li>
+<li>Dative - Ich gebe ihr dies.<br /></li>
+<li>Possessive - Es ist ihr Haus.<br /></li>
+</ul>
+<h3 id="wir"><a class="header" href="#wir">Wir</a></h3>
+<ul>
+<li>Accusative - Ich sehe uns.<br /></li>
+<li>Dative - Ich gebe uns dies.<br /></li>
+<li>Possessive - Es ist unser Haus.<br /></li>
+</ul>
+<h3 id="ihr"><a class="header" href="#ihr">ihr</a></h3>
+<ul>
+<li>Accusative - Ich sehe euch.<br /></li>
+<li>Dative - Ich gebe euch dies.<br /></li>
+<li>Possessive - Es ist euer Haus.<br /></li>
+</ul>
+<br />
+<br />
+<h3 id="sie-1"><a class="header" href="#sie-1">sie</a></h3>
+<ul>
+<li>Accusative - Ich sehe sie.<br /></li>
+<li>Dative - Ich gebe ihnen dies.<br /></li>
+<li>Possessive - Es ist ihr Haus.<br /></li>
+</ul>
+<h3 id="sie-2"><a class="header" href="#sie-2">Sie</a></h3>
+<ul>
+<li>Accusative - Ich sehe Sie.<br /></li>
+<li>Dative - Ich gebe Ihnen dies.<br /></li>
+<li>Possessive - Es ist Ihr Haus.<br /></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-8"><a class="header" href="#chapter-8">Chapter 8</a></h1>
+<h2 id="verbs"><a class="header" href="#verbs">Verbs <br /></a></h2>
+<h3 id="weak-verbs"><a class="header" href="#weak-verbs">Weak Verbs <br /></a></h3>
+<h4 id="-lachenlernen"><a class="header" href="#-lachenlernen">* lachen/lernen <br /></a></h4>
+<table><thead><tr><th></th><th>Prasens</th><th>Prateritum</th></tr></thead><tbody>
+<tr><td>ich</td><td>-e</td><td>-te</td></tr>
+<tr><td>du</td><td>-st</td><td>-test</td></tr>
+<tr><td>er/es/sie</td><td>-t</td><td>-te</td></tr>
+<tr><td>ihr</td><td>-t</td><td>-tet</td></tr>
+<tr><td>wir/sie/Sie</td><td>-en</td><td>-ten</td></tr>
+</tbody></table>
+<h3 id="strong-verbs"><a class="header" href="#strong-verbs">Strong Verbs <br /></a></h3>
+<table><thead><tr><th></th><th>sprechen</th><th>lesen</th><th>treffen</th><th>essen</th></tr></thead><tbody>
+<tr><td>ich</td><td>spreche</td><td>lese</td><td>treffe</td><td>esse</td></tr>
+<tr><td>du</td><td>sprichst</td><td>liest</td><td>triffst</td><td>isst</td></tr>
+<tr><td>er/es/sie</td><td>spricht</td><td>liest</td><td>trifft</td><td>isst</td></tr>
+<tr><td>ihr</td><td>sprecht</td><td>lest</td><td>trefft</td><td>esst</td></tr>
+<tr><td>wir/sie/Sie</td><td>sprechen</td><td>lesen</td><td>treffen</td><td>essen</td></tr>
+</tbody></table>
+<h3 id="verbs-perfect-1-seinhaben"><a class="header" href="#verbs-perfect-1-seinhaben">Verbs Perfect 1 (sein/haben) <br /></a></h3>
+<table><thead><tr><th>ge-t</th><th>-t</th><th>ge-n</th></tr></thead><tbody>
+<tr><td>gelernt</td><td>repariert</td><td>gelesen</td></tr>
+<tr><td>gemacht</td><td>trainiert</td><td>geschlafen</td></tr>
+<tr><td>gehort</td><td>telephoniert</td><td>gesehen</td></tr>
+<tr><td>gespielt</td><td>verkauft</td><td>getrunken</td></tr>
+<tr><td>gefragt</td><td>verdient</td><td>gegeben</td></tr>
+<tr><td>gesagt</td><td>besucht</td><td>gegessen</td></tr>
+</tbody></table>
+<h3 id="model-verbs"><a class="header" href="#model-verbs">Model Verbs <br /></a></h3>
+<table><thead><tr><th></th><th>können</th><th>müssen</th><th>wollen</th><th>möchten</th><th>dürfen</th><th>sollen</th></tr></thead><tbody>
+<tr><td>ich</td><td>kann</td><td>muss</td><td>will</td><td>möchte</td><td>darf</td><td>soll</td></tr>
+<tr><td>du</td><td>kannst</td><td>musst</td><td>willst</td><td>möchtest</td><td>darfst</td><td>sollst</td></tr>
+<tr><td>er/es/sie</td><td>kann</td><td>muss</td><td>will</td><td>möchte</td><td>darf</td><td>soll</td></tr>
+<tr><td>ihr</td><td>könnt</td><td>müsst</td><td>wollt</td><td>möchtet</td><td>dürft</td><td>sollt</td></tr>
+<tr><td>wir/sie/Sie</td><td>können</td><td>müssen</td><td>wollen</td><td>möchten</td><td>dürfen</td><td>sollen</td></tr>
+</tbody></table>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-9"><a class="header" href="#chapter-9">Chapter 9</a></h1>
+<h2 id="declension-of-adjectives"><a class="header" href="#declension-of-adjectives"><strong>Declension of Adjectives</strong></a></h2>
+<h3 id="strong-none-or-a"><a class="header" href="#strong-none-or-a">Strong (none or a)</a></h3>
+<table><thead><tr><th></th><th>masculine</th><th>feminine</th><th>neutral</th></tr></thead><tbody>
+<tr><td>Nominative</td><td>er</td><td>e</td><td>es</td></tr>
+<tr><td>Accusative</td><td>en</td><td>e</td><td>es</td></tr>
+<tr><td>Dative</td><td>em</td><td>er</td><td>em</td></tr>
+<tr><td>Genitive</td><td>en</td><td>er</td><td>en</td></tr>
+</tbody></table>
+<h3 id="weak-the"><a class="header" href="#weak-the">Weak (the)</a></h3>
+<table><thead><tr><th></th><th>masculine</th><th>feminine</th><th>neutral</th></tr></thead><tbody>
+<tr><td>Nominative</td><td>er</td><td>e</td><td>e</td></tr>
+<tr><td>Accusative</td><td>en</td><td>e</td><td>e</td></tr>
+<tr><td>Dative</td><td>em</td><td>en</td><td>en</td></tr>
+<tr><td>Genitive</td><td>es</td><td>en</td><td>en</td></tr>
+</tbody></table>
 
                     </main>
 
@@ -359,7 +507,7 @@ Many of them are mentioned in <a href="https://www.rust-lang.org/learn">Learn Ru
         </div>
 
         <!-- Livereload script (if served using the cli tool) -->
-        <script>
+        <script type="text/javascript">
             const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
             const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
             const socket = new WebSocket(wsAddress);
@@ -376,25 +524,35 @@ Many of them are mentioned in <a href="https://www.rust-lang.org/learn">Learn Ru
         </script>
 
 
+        <script type="text/javascript">
+            window.playground_line_numbers = true;
+        </script>
 
-        <script>
+        <script type="text/javascript">
             window.playground_copyable = true;
         </script>
 
+        <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
 
-        <script src="elasticlunr.min.js" charset="utf-8"></script>
-        <script src="mark.min.js" charset="utf-8"></script>
-        <script src="searcher.js" charset="utf-8"></script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
 
-        <script src="clipboard.min.js" charset="utf-8"></script>
-        <script src="highlight.js" charset="utf-8"></script>
-        <script src="book.js" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
 
-        <script>
+        <script type="text/javascript">
         window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
         });
         </script>
 

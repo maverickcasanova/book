@@ -2,9 +2,70 @@
 
 ## Verbs <br />
 
+#### sein-haben-werden  <br />
+
+#### Formen <br />
+
+
+| Prasens  |              |  sein   | haben  |  werden |
+|----------|--------------|---------|--------|---------|
+|          |   ich        |   bin   |  habe  |  werde  |
+|          |   du         |   bist  |  hast  |  wirst  |
+|          | er,sie,es    |   ist   |  hat   |  wird   |
+|          |   ihr        |   seid  |  habt  |  werdet |
+|          | wir/sie,Sie  |   sind  |  haben |  werden |
+
+
+| Präteritum |             |  sein   | haben    |  werden  |
+|------------|-------------|---------|----------|----------|
+|            |   ich       |   war   |  hatte   |  wurde   |
+|            |   du        |   warst |  hattest |  wurdest |
+|            | er,sie,es   |   war   |  hatte   |  wurde   |
+|            |   ihr       |   wart  |  hattet  |  wurdet  |
+|            | wir/sie,Sie |   waren |  hatten  |  wurden  |
+
+| Perfect  |            |  sein             |  haben           |  werden           |
+|----------|------------|-------------------|------------------|-------------------|
+|          |   ich      |   bin ... gewesen |  habe ... gehabt |  bin ... geworden |
+
+
+| PlusqaumPerfekt |             |  sein             | haben             |  werden           |
+|-----------------|-------------|-------------------|-------------------|-------------------|
+|                 |   ich       |   war ... gewesen |  hatte ... gehabt |  war ... geworden |
+
+
+#### Benutzen <br />
+
+|  sein          |  satz                        |  +              |
+|----------------|------------------------------|-----------------|
+|  als Vollverb  |  ich bin Mude                | Adjektiv        |
+|  als Vollverb  |  ich bin Artzin              |  Nomen          |
+|  als Vollverb  |  Die Tür ist gescholssen     | Partizip II     |
+|  als Hilfsverb |  ich bin gestern angekommen  | Perfect         |
+|  als Hilfsverb |  ich war gestern angekommen  | PlusqaumPerfekt |
+|  als Modelverb |  Es ist noch viel zu tun     |                 |
+
+
+|  haben         |                             |  +             |
+|----------------|-----------------------------|----------------|
+|  als Vollverb  |  ich habe Hunger            |  Nomen         |
+|  als Hilfsverb |  ich habe ihn gefragt       |  Perfekt       |
+|  als Hilfsverb |  ich habe ihn gefragt       | PlusqaumPerfekt|
+|  als Modelverb |  ich have noch viel zu tun  |                |
+
+|  werden       |  satz                         |  +           |
+|---------------|-------------------------------|--------------|
+|  als Vollverb |  ich werde Artzin             |  Nomen       |
+|  als Vollverb |  ich werde ungeduldig         |  Adjektiv    |
+|  als Hilfsverb|  Hier wird eine museum gebaut | Passiv       |
+|  als Hilfsverb|  ich werde dich bald besuchen | Future 1     |
+|  als Hilfsverb|  ich würde jetzt gern schlafen| Konjunktiv II|
+|  als Modelverb|  Es wird krank Sein           |              |
+
+
 ### Weak Verbs <br />
 
-#### * lachen/lernen <br />
+#### lachen/lernen <br />
 
 |                |   Prasens|  Prateritum|
 |----------------|----------|------------|

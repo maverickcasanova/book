@@ -6,28 +6,6 @@ src = "src"
 title = "German Book"
 
 [output.html]
-no-section-label = true
-additional-css = ["theme/rhai.min.css"]
 curly-quotes = true
 git-repository-url = "https://github.com/maverickcasanova/book"
 site-url = "https://maverickcasanova.github.io/book/"
-
-[output.html.fold]
-enable = true
-level = 4
-
-[output.html.playground]
-runnable = false
-
-[outputX.linkcheck]
-optional = true
-follow-web-links = false
-traverse-parent-directories = false
-warning-policy = "ignore"
-
-[preprocessor.tera]
-command = "mdbook-tera"
-
-[preprocessor.admonish]
-command = "mdbook-admonish"
-assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`

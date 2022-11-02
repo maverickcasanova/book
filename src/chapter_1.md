@@ -1,9 +1,6 @@
 # Chapter 1
 
-~~~admonish success title=""
 Gender Indentifications by Word Endings .
-~~~
-
 
 |   der   |  die    |  das   |
 |---------|---------|--------|
